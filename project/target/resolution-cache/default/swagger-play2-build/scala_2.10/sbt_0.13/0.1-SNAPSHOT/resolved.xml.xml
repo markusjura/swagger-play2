@@ -4,7 +4,7 @@
 		module="swagger-play2-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20140408155351"
+		publication="20140408162051"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
@@ -44,5 +44,6 @@
 		</dependency>
 		<dependency org="com.typesafe.play" name="sbt-plugin" rev="2.3-M1" conf="compile->default(compile)" e:sbtVersion="0.13" e:scalaVersion="2.10"/>
 		<dependency org="com.typesafe.sbt" name="sbt-pgp" rev="0.8.1" conf="compile->default(compile)" e:sbtVersion="0.13" e:scalaVersion="2.10"/>
+		<dependency org="com.typesafe.sbt" name="sbt-ghpages" rev="0.5.2" conf="compile->default(compile)" e:sbtVersion="0.13" e:scalaVersion="2.10"/>
 	</dependencies>
 </ivy-module>

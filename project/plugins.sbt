@@ -14,4 +14,3 @@ resolvers += "Typesafe Snapshots" at "http://repo.typesafe.com/typesafe/snapshot
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.3-M1")
 
 addSbtPlugin("com.typesafe.sbt" % "sbt-pgp" % "0.8.1")
-

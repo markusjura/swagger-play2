@@ -9,8 +9,186 @@
 		extra-sbtVersion="0.13"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20140408155351"/>
+		date="20140408162051"/>
 	<dependencies>
+		<module organisation="com.typesafe.sbt" name="sbt-ghpages">
+			<revision name="0.5.2" status="release" pubdate="20130801130044" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="true" searched="true" default="false" conf="compile, default(compile)" position="102">
+				<metadata-artifact status="successful" details="" size="2089" time="1378" location="/Users/mj/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-ghpages/ivy-0.5.2.xml" searched="true" original-local-location="/Users/mj/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-ghpages/ivy-0.5.2.xml.original" origin-is-local="false" origin-location="http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-ghpages/scala_2.10/sbt_0.13/0.5.2/ivys/ivy.xml"/>
+				<caller organisation="default" name="swagger-play2-build" conf="test, compile, runtime" rev="0.5.2" rev-constraint-default="0.5.2" rev-constraint-dynamic="0.5.2" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbt-ghpages" type="jar" ext="jar" status="successful" details="" size="20426" time="1880" location="/Users/mj/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-ghpages/jars/sbt-ghpages-0.5.2.jar">
+						<origin-location is-local="false" location="http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-ghpages/scala_2.10/sbt_0.13/0.5.2/jars/sbt-ghpages.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.sbt" name="sbt-site">
+			<revision name="0.7.0" status="release" pubdate="20130801125407" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="true" searched="true" default="false" conf="compile, default(compile)" position="108">
+				<metadata-artifact status="successful" details="" size="1914" time="1348" location="/Users/mj/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-site/ivy-0.7.0.xml" searched="true" original-local-location="/Users/mj/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-site/ivy-0.7.0.xml.original" origin-is-local="false" origin-location="http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-site/scala_2.10/sbt_0.13/0.7.0/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.sbt" name="sbt-ghpages" conf="compile" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="0.5.2" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbt-site" type="jar" ext="jar" status="successful" details="" size="148897" time="2362" location="/Users/mj/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-site/jars/sbt-site-0.7.0.jar">
+						<origin-location is-local="false" location="http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-site/scala_2.10/sbt_0.13/0.7.0/jars/sbt-site.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.databinder" name="unfiltered-jetty_2.10">
+			<revision name="0.6.8" status="release" pubdate="20130407025226" resolver="public" artresolver="public" homepage="http://unfiltered.databinder.net/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="109">
+				<license name="MIT" url="http://www.opensource.org/licenses/MIT"/>
+				<metadata-artifact status="successful" details="" size="1847" time="360" location="/Users/mj/.ivy2/cache/net.databinder/unfiltered-jetty_2.10/ivy-0.6.8.xml" searched="true" original-local-location="/Users/mj/.ivy2/cache/net.databinder/unfiltered-jetty_2.10/ivy-0.6.8.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/net/databinder/unfiltered-jetty_2.10/0.6.8/unfiltered-jetty_2.10-0.6.8.pom"/>
+				<caller organisation="com.typesafe.sbt" name="sbt-site" conf="compile" rev="0.6.8" rev-constraint-default="0.6.8" rev-constraint-dynamic="0.6.8" callerrev="0.7.0"/>
+				<artifacts>
+					<artifact name="unfiltered-jetty_2.10" type="jar" ext="jar" status="successful" details="" size="24476" time="393" location="/Users/mj/.ivy2/cache/net.databinder/unfiltered-jetty_2.10/jars/unfiltered-jetty_2.10-0.6.8.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/net/databinder/unfiltered-jetty_2.10/0.6.8/unfiltered-jetty_2.10-0.6.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-webapp">
+			<revision name="7.6.9.v20130131" status="release" pubdate="20130131155504" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="111">
+				<metadata-artifact status="successful" details="" size="3255" time="395" location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-webapp/ivy-7.6.9.v20130131.xml" searched="true" original-local-location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-webapp/ivy-7.6.9.v20130131.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-webapp/7.6.9.v20130131/jetty-webapp-7.6.9.v20130131.pom"/>
+				<caller organisation="net.databinder" name="unfiltered-jetty_2.10" conf="default, compile, runtime, master" rev="7.6.9.v20130131" rev-constraint-default="7.6.9.v20130131" rev-constraint-dynamic="7.6.9.v20130131" callerrev="0.6.8"/>
+				<artifacts>
+					<artifact name="jetty-webapp" type="jar" ext="jar" status="successful" details="" size="98869" time="426" location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-webapp/jars/jetty-webapp-7.6.9.v20130131.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-webapp/7.6.9.v20130131/jetty-webapp-7.6.9.v20130131.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-servlet">
+			<revision name="7.6.9.v20130131" status="release" pubdate="20130131155047" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="113">
+				<metadata-artifact status="successful" details="" size="2656" time="494" location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-servlet/ivy-7.6.9.v20130131.xml" searched="true" original-local-location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-servlet/ivy-7.6.9.v20130131.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-servlet/7.6.9.v20130131/jetty-servlet-7.6.9.v20130131.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-webapp" conf="compile, runtime" rev="7.6.9.v20130131" rev-constraint-default="7.6.9.v20130131" rev-constraint-dynamic="7.6.9.v20130131" callerrev="7.6.9.v20130131"/>
+				<artifacts>
+					<artifact name="jetty-servlet" type="jar" ext="jar" status="successful" details="" size="89811" time="393" location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-servlet/jars/jetty-servlet-7.6.9.v20130131.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-servlet/7.6.9.v20130131/jetty-servlet-7.6.9.v20130131.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-security">
+			<revision name="7.6.9.v20130131" status="release" pubdate="20130131155023" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="114">
+				<metadata-artifact status="successful" details="" size="2698" time="414" location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-security/ivy-7.6.9.v20130131.xml" searched="true" original-local-location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-security/ivy-7.6.9.v20130131.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-security/7.6.9.v20130131/jetty-security-7.6.9.v20130131.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-servlet" conf="compile, runtime" rev="7.6.9.v20130131" rev-constraint-default="7.6.9.v20130131" rev-constraint-dynamic="7.6.9.v20130131" callerrev="7.6.9.v20130131"/>
+				<artifacts>
+					<artifact name="jetty-security" type="jar" ext="jar" status="successful" details="" size="84223" time="399" location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-security/jars/jetty-security-7.6.9.v20130131.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-security/7.6.9.v20130131/jetty-security-7.6.9.v20130131.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-server">
+			<revision name="7.6.9.v20130131" status="release" pubdate="20130131154947" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="115">
+				<metadata-artifact status="successful" details="" size="3745" time="399" location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-server/ivy-7.6.9.v20130131.xml" searched="true" original-local-location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-server/ivy-7.6.9.v20130131.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/7.6.9.v20130131/jetty-server-7.6.9.v20130131.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-security" conf="compile, runtime" rev="7.6.9.v20130131" rev-constraint-default="7.6.9.v20130131" rev-constraint-dynamic="7.6.9.v20130131" callerrev="7.6.9.v20130131"/>
+				<artifacts>
+					<artifact name="jetty-server" type="jar" ext="jar" status="successful" details="" size="324835" time="520" location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-server/jars/jetty-server-7.6.9.v20130131.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/7.6.9.v20130131/jetty-server-7.6.9.v20130131.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-continuation">
+			<revision name="7.6.9.v20130131" status="release" pubdate="20130131154614" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="117">
+				<metadata-artifact status="successful" details="" size="2696" time="380" location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-continuation/ivy-7.6.9.v20130131.xml" searched="true" original-local-location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-continuation/ivy-7.6.9.v20130131.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-continuation/7.6.9.v20130131/jetty-continuation-7.6.9.v20130131.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-server" conf="compile, runtime" rev="7.6.9.v20130131" rev-constraint-default="7.6.9.v20130131" rev-constraint-dynamic="7.6.9.v20130131" callerrev="7.6.9.v20130131"/>
+				<artifacts>
+					<artifact name="jetty-continuation" type="jar" ext="jar" status="successful" details="" size="20429" time="393" location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-continuation/jars/jetty-continuation-7.6.9.v20130131.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-continuation/7.6.9.v20130131/jetty-continuation-7.6.9.v20130131.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty.orbit" name="javax.servlet">
+			<revision name="2.5.0.v201103041518" status="release" pubdate="20111207204816" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="116">
+				<metadata-artifact status="successful" details="" size="732" time="366" location="/Users/mj/.ivy2/cache/org.eclipse.jetty.orbit/javax.servlet/ivy-2.5.0.v201103041518.xml" searched="true" original-local-location="/Users/mj/.ivy2/cache/org.eclipse.jetty.orbit/javax.servlet/ivy-2.5.0.v201103041518.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/eclipse/jetty/orbit/javax.servlet/2.5.0.v201103041518/javax.servlet-2.5.0.v201103041518.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-server" conf="compile, runtime" rev="2.5.0.v201103041518" rev-constraint-default="2.5.0.v201103041518" rev-constraint-dynamic="2.5.0.v201103041518" callerrev="7.6.9.v20130131"/>
+				<artifacts>
+					<artifact name="javax.servlet" type="orbit" ext="jar" status="successful" details="" size="119303" time="398" location="/Users/mj/.ivy2/cache/org.eclipse.jetty.orbit/javax.servlet/orbits/javax.servlet-2.5.0.v201103041518.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/eclipse/jetty/orbit/javax.servlet/2.5.0.v201103041518/javax.servlet-2.5.0.v201103041518.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-xml">
+			<revision name="7.6.9.v20130131" status="release" pubdate="20130131155441" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="112">
+				<metadata-artifact status="successful" details="" size="1947" time="354" location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-xml/ivy-7.6.9.v20130131.xml" searched="true" original-local-location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-xml/ivy-7.6.9.v20130131.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-xml/7.6.9.v20130131/jetty-xml-7.6.9.v20130131.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-webapp" conf="compile, runtime" rev="7.6.9.v20130131" rev-constraint-default="7.6.9.v20130131" rev-constraint-dynamic="7.6.9.v20130131" callerrev="7.6.9.v20130131"/>
+				<artifacts>
+					<artifact name="jetty-xml" type="jar" ext="jar" status="successful" details="" size="37474" time="391" location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-xml/jars/jetty-xml-7.6.9.v20130131.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-xml/7.6.9.v20130131/jetty-xml-7.6.9.v20130131.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.databinder" name="unfiltered-util_2.10">
+			<revision name="0.6.8" status="release" pubdate="20130407025229" resolver="public" artresolver="public" homepage="http://unfiltered.databinder.net/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="110">
+				<license name="MIT" url="http://www.opensource.org/licenses/MIT"/>
+				<metadata-artifact status="successful" details="" size="1636" time="398" location="/Users/mj/.ivy2/cache/net.databinder/unfiltered-util_2.10/ivy-0.6.8.xml" searched="true" original-local-location="/Users/mj/.ivy2/cache/net.databinder/unfiltered-util_2.10/ivy-0.6.8.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/net/databinder/unfiltered-util_2.10/0.6.8/unfiltered-util_2.10-0.6.8.pom"/>
+				<caller organisation="net.databinder" name="unfiltered-jetty_2.10" conf="default, compile, runtime, master" rev="0.6.8" rev-constraint-default="0.6.8" rev-constraint-dynamic="0.6.8" callerrev="0.6.8"/>
+				<artifacts>
+					<artifact name="unfiltered-util_2.10" type="jar" ext="jar" status="successful" details="" size="30003" time="369" location="/Users/mj/.ivy2/cache/net.databinder/unfiltered-util_2.10/jars/unfiltered-util_2.10-0.6.8.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/net/databinder/unfiltered-util_2.10/0.6.8/unfiltered-util_2.10-0.6.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.sbt" name="sbt-git">
+			<revision name="0.6.1" status="release" pubdate="20130703104003" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="true" searched="true" default="false" conf="compile, default(compile)" position="103">
+				<metadata-artifact status="successful" details="" size="1913" time="1285" location="/Users/mj/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-git/ivy-0.6.1.xml" searched="true" original-local-location="/Users/mj/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-git/ivy-0.6.1.xml.original" origin-is-local="false" origin-location="http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-git/scala_2.10/sbt_0.13/0.6.1/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.sbt" name="sbt-ghpages" conf="compile" rev="0.6.1" rev-constraint-default="0.6.1" rev-constraint-dynamic="0.6.1" callerrev="0.5.2" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbt-git" type="jar" ext="jar" status="successful" details="" size="76058" time="2148" location="/Users/mj/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-git/jars/sbt-git-0.6.1.jar">
+						<origin-location is-local="false" location="http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-git/scala_2.10/sbt_0.13/0.6.1/jars/sbt-git.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm">
+			<revision name="2.2.0.201212191850-r" status="release" pubdate="20130108210749" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="104">
+				<metadata-artifact status="successful" details="" size="8295" time="436" location="/Users/mj/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.pgm/ivy-2.2.0.201212191850-r.xml" searched="true" original-local-location="/Users/mj/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.pgm/ivy-2.2.0.201212191850-r.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.pgm/2.2.0.201212191850-r/org.eclipse.jgit.pgm-2.2.0.201212191850-r.pom"/>
+				<caller organisation="com.typesafe.sbt" name="sbt-git" conf="compile" rev="2.2.0.201212191850-r" rev-constraint-default="2.2.0.201212191850-r" rev-constraint-dynamic="2.2.0.201212191850-r" callerrev="0.6.1"/>
+				<artifacts>
+					<artifact name="org.eclipse.jgit.pgm" type="jar" ext="jar" status="successful" details="" size="183404" time="543" location="/Users/mj/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.pgm/jars/org.eclipse.jgit.pgm-2.2.0.201212191850-r.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.pgm/2.2.0.201212191850-r/org.eclipse.jgit.pgm-2.2.0.201212191850-r.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit.ui">
+			<revision name="2.2.0.201212191850-r" status="release" pubdate="20130108210618" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="107">
+				<metadata-artifact status="successful" details="" size="3557" time="386" location="/Users/mj/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.ui/ivy-2.2.0.201212191850-r.xml" searched="true" original-local-location="/Users/mj/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.ui/ivy-2.2.0.201212191850-r.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.ui/2.2.0.201212191850-r/org.eclipse.jgit.ui-2.2.0.201212191850-r.pom"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm" conf="default, compile, runtime, master" rev="2.2.0.201212191850-r" rev-constraint-default="2.2.0.201212191850-r" rev-constraint-dynamic="2.2.0.201212191850-r" callerrev="2.2.0.201212191850-r"/>
+				<artifacts>
+					<artifact name="org.eclipse.jgit.ui" type="jar" ext="jar" status="successful" details="" size="20889" time="591" location="/Users/mj/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.ui/jars/org.eclipse.jgit.ui-2.2.0.201212191850-r.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.ui/2.2.0.201212191850-r/org.eclipse.jgit.ui-2.2.0.201212191850-r.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit.iplog">
+			<revision name="2.2.0.201212191850-r" status="release" pubdate="20130109194518" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="106">
+				<metadata-artifact status="successful" details="" size="3533" time="369" location="/Users/mj/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.iplog/ivy-2.2.0.201212191850-r.xml" searched="true" original-local-location="/Users/mj/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.iplog/ivy-2.2.0.201212191850-r.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.iplog/2.2.0.201212191850-r/org.eclipse.jgit.iplog-2.2.0.201212191850-r.pom"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm" conf="default, compile, runtime, master" rev="2.2.0.201212191850-r" rev-constraint-default="2.2.0.201212191850-r" rev-constraint-dynamic="2.2.0.201212191850-r" callerrev="2.2.0.201212191850-r"/>
+				<artifacts>
+					<artifact name="org.eclipse.jgit.iplog" type="jar" ext="jar" status="successful" details="" size="40114" time="369" location="/Users/mj/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.iplog/jars/org.eclipse.jgit.iplog-2.2.0.201212191850-r.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.iplog/2.2.0.201212191850-r/org.eclipse.jgit.iplog-2.2.0.201212191850-r.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="args4j" name="args4j">
+			<revision name="2.0.12" status="release" pubdate="20090406205906" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="105">
+				<metadata-artifact status="successful" details="" size="1062" time="425" location="/Users/mj/.ivy2/cache/args4j/args4j/ivy-2.0.12.xml" searched="true" original-local-location="/Users/mj/.ivy2/cache/args4j/args4j/ivy-2.0.12.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/args4j/args4j/2.0.12/args4j-2.0.12.pom"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm" conf="default, compile, runtime, master" rev="2.0.12" rev-constraint-default="2.0.12" rev-constraint-dynamic="2.0.12" callerrev="2.2.0.201212191850-r"/>
+				<artifacts>
+					<artifact name="args4j" type="jar" ext="jar" status="successful" details="" size="45772" time="448" location="/Users/mj/.ivy2/cache/args4j/args4j/jars/args4j-2.0.12.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/args4j/args4j/2.0.12/args4j-2.0.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="com.typesafe.sbt" name="sbt-pgp">
 			<revision name="0.8.1" status="release" pubdate="20130715234825" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="94">
 				<metadata-artifact status="no" details="" size="1999" time="0" location="/Users/mj/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-pgp/ivy-0.8.1.xml" searched="false" origin-is-local="false" origin-location="http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-pgp/scala_2.10/sbt_0.13/0.8.1/ivys/ivy.xml"/>
@@ -167,11 +345,18 @@
 		<module organisation="org.eclipse.jetty" name="jetty-http">
 			<revision name="8.1.12.v20130726" status="release" pubdate="20130726185727" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="81">
 				<metadata-artifact status="no" details="" size="8444" time="0" location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-http/ivy-8.1.12.v20130726.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/8.1.12.v20130726/jetty-http-8.1.12.v20130726.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-server" conf="compile, runtime" rev="7.6.9.v20130131" rev-constraint-default="7.6.9.v20130131" rev-constraint-dynamic="7.6.9.v20130131" callerrev="7.6.9.v20130131"/>
 				<caller organisation="org.eclipse.jetty" name="jetty-websocket" conf="compile, runtime" rev="8.1.12.v20130726" rev-constraint-default="8.1.12.v20130726" rev-constraint-dynamic="8.1.12.v20130726" callerrev="8.1.12.v20130726"/>
 				<artifacts>
 					<artifact name="jetty-http" type="jar" ext="jar" status="no" details="" size="96042" time="0" location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-http/jars/jetty-http-8.1.12.v20130726.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/8.1.12.v20130726/jetty-http-8.1.12.v20130726.jar"/>
 					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="7.6.9.v20130131" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="8.1.12.v20130726"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-server" conf="compile, runtime" rev="7.6.9.v20130131" rev-constraint-default="7.6.9.v20130131" rev-constraint-dynamic="7.6.9.v20130131" callerrev="7.6.9.v20130131"/>
+				<artifacts>
 				</artifacts>
 			</revision>
 		</module>
@@ -191,11 +376,18 @@
 			<revision name="8.1.12.v20130726" status="release" pubdate="20130726185535" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="79">
 				<metadata-artifact status="no" details="" size="8669" time="0" location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-util/ivy-8.1.12.v20130726.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/8.1.12.v20130726/jetty-util-8.1.12.v20130726.pom"/>
 				<caller organisation="org.eclipse.jetty" name="jetty-io" conf="compile, runtime" rev="8.1.12.v20130726" rev-constraint-default="8.1.12.v20130726" rev-constraint-dynamic="8.1.12.v20130726" callerrev="8.1.12.v20130726"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-xml" conf="compile, runtime" rev="7.6.9.v20130131" rev-constraint-default="7.6.9.v20130131" rev-constraint-dynamic="7.6.9.v20130131" callerrev="7.6.9.v20130131"/>
 				<caller organisation="org.eclipse.jetty" name="jetty-websocket" conf="compile, runtime" rev="8.1.12.v20130726" rev-constraint-default="8.1.12.v20130726" rev-constraint-dynamic="8.1.12.v20130726" callerrev="8.1.12.v20130726"/>
 				<artifacts>
 					<artifact name="jetty-util" type="jar" ext="jar" status="no" details="" size="287536" time="0" location="/Users/mj/.ivy2/cache/org.eclipse.jetty/jetty-util/jars/jetty-util-8.1.12.v20130726.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/8.1.12.v20130726/jetty-util-8.1.12.v20130726.jar"/>
 					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="7.6.9.v20130131" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="8.1.12.v20130726"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-xml" conf="compile, runtime" rev="7.6.9.v20130131" rev-constraint-default="7.6.9.v20130131" rev-constraint-dynamic="7.6.9.v20130131" callerrev="7.6.9.v20130131"/>
+				<artifacts>
 				</artifacts>
 			</revision>
 		</module>
@@ -801,13 +993,20 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.commons" name="commons-compress">
-			<revision name="1.4.1" status="release" pubdate="20120522065732" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/compress/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="29">
+			<revision name="1.4.1" status="release" pubdate="20120522065732" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/compress/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master, master(*), runtime(*), compile(*)" position="29">
 				<metadata-artifact status="no" details="" size="7888" time="0" location="/Users/mj/.ivy2/cache/org.apache.commons/commons-compress/ivy-1.4.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.pom"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm" conf="default, compile, runtime, master" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="2.2.0.201212191850-r"/>
 				<caller organisation="com.typesafe.sbt" name="sbt-native-packager" conf="compile" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="0.7.0-RC2"/>
 				<artifacts>
 					<artifact name="commons-compress" type="jar" ext="jar" status="no" details="" size="241367" time="0" location="/Users/mj/.ivy2/cache/org.apache.commons/commons-compress/jars/commons-compress-1.4.1.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar"/>
 					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.4.1"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm" conf="default, compile, runtime, master" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="2.2.0.201212191850-r"/>
+				<artifacts>
 				</artifacts>
 			</revision>
 		</module>
@@ -1109,6 +1308,7 @@
 				<caller organisation="io.spray" name="spray-httpx" conf="compile, runtime" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="1.2.0"/>
 				<caller organisation="org.specs2" name="specs2-matcher_2.10" conf="compile, runtime" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="2.3.10"/>
 				<caller organisation="com.jsuereth" name="scala-arm_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="1.3"/>
+				<caller organisation="net.databinder" name="unfiltered-util_2.10" conf="compile, runtime" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.1" callerrev="0.6.8"/>
 				<caller organisation="net.sandrogrzicic" name="scalabuff-runtime_2.10" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="1.2.0"/>
 				<caller organisation="org.scalaz" name="scalaz-concurrent_2.10" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="7.0.6"/>
 				<artifacts>
@@ -1140,6 +1340,7 @@
 				<caller organisation="com.typesafe.akka" name="akka-remote_2.10" conf="compile, runtime" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="2.2.3"/>
 				<caller organisation="com.jsuereth" name="gpg-library_2.10" conf="default, compile, runtime, master" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="0.8.1"/>
 				<caller organisation="org.scalaz" name="scalaz-core_2.10" conf="default, compile, runtime, master" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="7.0.2"/>
+				<caller organisation="net.databinder" name="unfiltered-util_2.10" conf="compile, runtime" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.1" callerrev="0.6.8"/>
 				<caller organisation="net.sandrogrzicic" name="scalabuff-runtime_2.10" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="1.2.0"/>
 				<caller organisation="com.typesafe.akka" name="akka-cluster_2.10" conf="compile, runtime" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="2.2.3"/>
 				<artifacts>
@@ -1406,7 +1607,7 @@
 			</revision>
 		</module>
 		<module organisation="default" name="global-plugins">
-			<revision name="0.0" status="integration" pubdate="20140408155349" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+			<revision name="0.0" status="integration" pubdate="20140408162048" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="default" name="swagger-play2-build" conf="test, compile, runtime" rev="0.0" rev-constraint-default="0.0" rev-constraint-dynamic="0.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
 				<artifacts>
@@ -1425,13 +1626,24 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit">
-			<revision name="3.1.0.201310021548-r" status="release" pubdate="20131015010729" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+			<revision name="3.1.0.201310021548-r" status="release" pubdate="20131015010729" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master, master(*), runtime(*), compile(*)" position="2">
 				<metadata-artifact status="no" details="" size="6501" time="0" location="/Users/mj/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit/ivy-3.1.0.201310021548-r.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/3.1.0.201310021548-r/org.eclipse.jgit-3.1.0.201310021548-r.pom"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.iplog" conf="compile, runtime" rev="2.2.0.201212191850-r" rev-constraint-default="2.2.0.201212191850-r" rev-constraint-dynamic="2.2.0.201212191850-r" callerrev="2.2.0.201212191850-r"/>
 				<caller organisation="name.heikoseeberger" name="sbt-groll" conf="compile" rev="3.1.0.201310021548-r" rev-constraint-default="3.1.0.201310021548-r" rev-constraint-dynamic="3.1.0.201310021548-r" callerrev="2.3.0"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm" conf="default, compile, runtime, master" rev="2.2.0.201212191850-r" rev-constraint-default="2.2.0.201212191850-r" rev-constraint-dynamic="2.2.0.201212191850-r" callerrev="2.2.0.201212191850-r"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.ui" conf="compile, runtime" rev="2.2.0.201212191850-r" rev-constraint-default="2.2.0.201212191850-r" rev-constraint-dynamic="2.2.0.201212191850-r" callerrev="2.2.0.201212191850-r"/>
 				<artifacts>
 					<artifact name="org.eclipse.jgit" type="jar" ext="jar" status="no" details="" size="1833272" time="0" location="/Users/mj/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit/jars/org.eclipse.jgit-3.1.0.201310021548-r.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/3.1.0.201310021548-r/org.eclipse.jgit-3.1.0.201310021548-r.jar"/>
 					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.2.0.201212191850-r" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="3.1.0.201310021548-r"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.iplog" conf="compile, runtime" rev="2.2.0.201212191850-r" rev-constraint-default="2.2.0.201212191850-r" rev-constraint-dynamic="2.2.0.201212191850-r" callerrev="2.2.0.201212191850-r"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm" conf="default, compile, runtime, master" rev="2.2.0.201212191850-r" rev-constraint-default="2.2.0.201212191850-r" rev-constraint-dynamic="2.2.0.201212191850-r" callerrev="2.2.0.201212191850-r"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.ui" conf="compile, runtime" rev="2.2.0.201212191850-r" rev-constraint-default="2.2.0.201212191850-r" rev-constraint-dynamic="2.2.0.201212191850-r" callerrev="2.2.0.201212191850-r"/>
+				<artifacts>
 				</artifacts>
 			</revision>
 		</module>

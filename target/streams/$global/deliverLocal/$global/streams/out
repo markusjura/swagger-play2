@@ -1,4 +1,0 @@
-[0m[[0minfo[0m] [0m:: delivering :: com.wordnik#swagger-play2_2.10;1.3.5 :: 1.3.5 :: release :: Tue Apr 08 15:54:13 CEST 2014[0m
-[0m[[0mdebug[0m] [0m	options = status=release pubdate=Tue Apr 08 15:54:13 CEST 2014 validate=true resolveDynamicRevisions=true merge=true resolveId=null pubBranch=null[0m
-[0m[[0minfo[0m] [0m	delivering ivy file to /Users/mj/workspace/swagger-play2/target/scala-2.10/ivy-1.3.5.xml[0m
-[0m[[0mdebug[0m] [0m	deliver done (24ms)[0m
