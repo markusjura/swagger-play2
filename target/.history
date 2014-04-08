@@ -1,0 +1,7 @@
+clean
+compile
+publish-local
+publishLocal
+clean
+compile
+publishLocal

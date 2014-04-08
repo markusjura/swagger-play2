@@ -1,0 +1,17 @@
+[0m[[0minfo[0m] [0mPackaging /Users/mj/workspace/swagger-play2/target/scala-2.10/swagger-play2_2.10-1.3.5-sources.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	play/modules/swagger/PlayApiScanner.scala[0m
+[0m[[0mdebug[0m] [0m	  /Users/mj/workspace/swagger-play2/app/play/modules/swagger/PlayApiScanner.scala[0m
+[0m[[0mdebug[0m] [0m	controllers/ApiHelpController.scala[0m
+[0m[[0mdebug[0m] [0m	  /Users/mj/workspace/swagger-play2/app/controllers/ApiHelpController.scala[0m
+[0m[[0mdebug[0m] [0m	play/modules/swagger/PlayApiReader.scala[0m
+[0m[[0mdebug[0m] [0m	  /Users/mj/workspace/swagger-play2/app/play/modules/swagger/PlayApiReader.scala[0m
+[0m[[0mdebug[0m] [0m	play.plugins[0m
+[0m[[0mdebug[0m] [0m	  /Users/mj/workspace/swagger-play2/conf/play.plugins[0m
+[0m[[0mdebug[0m] [0m	application.conf[0m
+[0m[[0mdebug[0m] [0m	  /Users/mj/workspace/swagger-play2/conf/application.conf[0m
+[0m[[0mdebug[0m] [0m	play/modules/swagger/ApiListingCache.scala[0m
+[0m[[0mdebug[0m] [0m	  /Users/mj/workspace/swagger-play2/app/play/modules/swagger/ApiListingCache.scala[0m
+[0m[[0mdebug[0m] [0m	play/modules/swagger/SwaggerPlugin.scala[0m
+[0m[[0mdebug[0m] [0m	  /Users/mj/workspace/swagger-play2/app/play/modules/swagger/SwaggerPlugin.scala[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m

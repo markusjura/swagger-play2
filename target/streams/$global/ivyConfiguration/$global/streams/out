@@ -1,0 +1,18 @@
+[0m[[0mdebug[0m] [0mOther repositories:[0m
+[0m[[0mdebug[0m] [0m	FileRepository(publish-m2-local,FileConfiguration(true,None),Patterns(ivyPatterns=List(), artifactPatterns=List(/Users/mj/.m2/repository/[organisation]/[module](_[scalaVersion])(_[sbtVersion])/[revision]/[artifact]-[revision](-[classifier]).[ext]), isMavenCompatible=true, descriptorOptional=false, skipConsistencyCheck=false))[0m
+[0m[[0mdebug[0m] [0m	releases: https://oss.sonatype.org/service/local/staging/deploy/maven2[0m
+[0m[[0mdebug[0m] [0mDefault repositories:[0m
+[0m[[0mdebug[0m] [0m	Raw(ProjectResolver(inter-project, mapped: ))[0m
+[0m[[0mdebug[0m] [0m	FileRepository(local,FileConfiguration(true,None),Patterns(ivyPatterns=List(${ivy.home}/local/[organisation]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]), artifactPatterns=List(${ivy.home}/local/[organisation]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]), isMavenCompatible=false, descriptorOptional=false, skipConsistencyCheck=false))[0m
+[0m[[0mdebug[0m] [0m	URLRepository(activator-local,Patterns(ivyPatterns=List(file:/Users/mj/server/activator-1.1.0/repository/[organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]), artifactPatterns=List(file:/Users/mj/server/activator-1.1.0/repository/[organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]), isMavenCompatible=false, descriptorOptional=false, skipConsistencyCheck=false))[0m
+[0m[[0mdebug[0m] [0m	public: http://repo1.maven.org/maven2/[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: http://typesafe.artifactoryonline.com/typesafe/releases[0m
+[0m[[0mdebug[0m] [0m	URLRepository(typesafe-ivy-releases,Patterns(ivyPatterns=List(http://typesafe.artifactoryonline.com/typesafe/ivy-releases/[organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]), artifactPatterns=List(http://typesafe.artifactoryonline.com/typesafe/ivy-releases/[organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]), isMavenCompatible=false, descriptorOptional=false, skipConsistencyCheck=false))[0m
+[0m[[0mdebug[0m] [0m	maven-central: https://repo1.maven.org/maven2[0m
+[0m[[0mdebug[0m] [0m	Local Maven Repository: file:///Users/mj/.m2/repository[0m
+[0m[[0mdebug[0m] [0m	sonatype-snapshots: https://oss.sonatype.org/content/repositories/snapshots[0m
+[0m[[0mdebug[0m] [0m	sonatype-releases: https://oss.sonatype.org/content/repositories/releases[0m
+[0m[[0mdebug[0m] [0m	java-net: http://download.java.net/maven/2[0m
+[0m[[0mdebug[0m] [0m	Typesafe Snapshots: http://repo.typesafe.com/typesafe/snapshots/[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: http://repo.typesafe.com/typesafe/releases/[0m
+[0m[[0mdebug[0m] [0mUsing inline dependencies specified in Scala.[0m
