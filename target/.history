@@ -11,3 +11,4 @@ publish ghpages-push-site
 make-site
 publish
 publish ghpages-push-site
+clean
