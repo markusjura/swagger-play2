@@ -34,6 +34,3 @@ out/
 # Log files
 logs
 *.log
-
-# Koan
-.koan.properties
