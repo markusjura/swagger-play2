@@ -32,11 +32,11 @@ licenses += ("Apache-2.0", url("https://www.apache.org/licenses/LICENSE-2.0.html
 ReleaseKeys.versionBump := sbtrelease.Version.Bump.Minor
 
 // Bintray settings
-publishMavenStyle := false
+publishMavenStyle := true
 
 publishArtifact in Test := false
 
-bintrayRepository := "swagger-play2"
+bintrayRepository := "maven"
 
 // Scala option settings
 scalacOptions ++= List(
