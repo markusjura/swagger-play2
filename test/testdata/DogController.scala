@@ -2,7 +2,6 @@ package test.testdata
 
 
 import com.wordnik.swagger.annotations._
-import com.wordnik.swagger.core.util.JsonSerializer
 
 import java.io.IOException
 
@@ -22,15 +21,15 @@ import scala.concurrent.Future
   produces = "application/json, application/xml",
   consumes = "application/json, application/xml",
   protocols = "http, https",
-  authorizations = "vet, owner"
+  authorizations = Array(new Authorization("vet"), new Authorization("owner"))
 )
 object DogController extends Controller {
 
   @ApiOperation(value = "addDog1",
     httpMethod = "PUT",
-    authorizations = "",
     consumes = "",
-    protocols = "")
+    protocols = "",
+    authorizations = Array())
   @ApiImplicitParams(Array(
     new ApiImplicitParam(name = "dog", value = "Dog object to add", required = true, dataType = "Dog", paramType = "body")))
   def add1 = Action {
@@ -41,7 +40,7 @@ object DogController extends Controller {
     notes = "Adds a dogs better",
     httpMethod = "PUT",
     nickname = "addDog2_nickname",
-    authorizations = "vet",
+    authorizations = Array(new Authorization("vet")),
     consumes = " application/json ",
     protocols = "http",
     position = 2)
@@ -55,7 +54,7 @@ object DogController extends Controller {
   @ApiOperation(value = "Add a new Dog",
     notes = "Adds a dogs nicely",
     httpMethod = "PUT",
-    authorizations = "vet, owner",
+    authorizations = Array(new Authorization("vet"), new Authorization("owner")),
     consumes = " application/json, text/yaml ",
     protocols = "http, https"
   )

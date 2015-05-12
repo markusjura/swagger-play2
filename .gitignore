@@ -3,7 +3,7 @@
 bin
 project/target
 project/project
-target/
+target
 RUNNING_PID
 
 # Eclipse

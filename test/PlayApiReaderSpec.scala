@@ -9,7 +9,7 @@ import test.testdata.DogController
 
 import com.wordnik.swagger.core.SwaggerSpec
 import com.wordnik.swagger.config.SwaggerConfig
-import com.wordnik.swagger.model.{Parameter, Operation}
+import com.wordnik.swagger.model.{Authorization, AnyAllowableValues, Parameter, Operation}
 
 import org.mockito.Mockito._
 
@@ -194,14 +194,14 @@ class PlayApiReaderSpec extends Specification with Mockito {
     "adds 'authorizations' when defined" in {
       val operation: Operation = reader.readMethod(dogMethod("add2").get).get
       operation.authorizations.length must beEqualTo(1)
-      operation.authorizations.head must beEqualTo("vet")
+      operation.authorizations.head.`type` must beEqualTo("vet")
     }
 
     "adds mulitple 'authorizations' when defined" in {
       val operation: Operation = reader.readMethod(dogMethod("add3").get).get
       operation.authorizations.length must beEqualTo(2)
-      operation.authorizations.contains("vet") must beTrue
-      operation.authorizations.contains("owner") must beTrue
+      operation.authorizations(0).`type` must beEqualTo("vet")
+      operation.authorizations(1).`type` must beEqualTo("owner")
     }
 
     "adds empty 'produces' when not defined" in {
@@ -341,7 +341,7 @@ class PlayApiReaderSpec extends Specification with Mockito {
     "adds 'parameters' when defined by @ApiParam" in {
       val operation: Operation = reader.readMethod(get1Method).get
       operation.parameters.length must beEqualTo(1)
-      operation.parameters.head must beEqualTo(Parameter("dogId", Some("ID of dog to fetch"), None, true, false, "long", null, "path", None))
+      operation.parameters.head must beEqualTo(Parameter("dogId", Some("ID of dog to fetch"), None, true, false, "long", AnyAllowableValues, "path", None))
     }
 
     "adds 'parameters' when defined by @ApiImplicitParams" in {

@@ -82,9 +82,9 @@ class PlayApiReader(val routes: Option[Routes]) extends JaxrsApiReader {
             val annotations = field.getAnnotations
             processParamAnnotations(param, annotations)
           }
-          else None
+          else List.empty
         }
-      ).flatten.toList
+      ).flatten
 
       for(method <- cls.getMethods) {
         val returnType = findSubresourceType(method)
@@ -331,8 +331,8 @@ class PlayApiReader(val routes: Option[Routes]) extends JaxrsApiReader {
         param.dataType = processDataType(paramType, genericParamType)
         processParamAnnotations(param, annotations)
       }
-      else None
-    }).flatten.toList
+      else List.empty
+    }).flatten
 
     params
   }
@@ -350,7 +350,7 @@ class PlayApiReader(val routes: Option[Routes]) extends JaxrsApiReader {
       ).toList
   }
 
-  def processParamAnnotations(mutable: MutableParameter, paramAnnotations: Array[Annotation]): Option[Parameter] = {
+  def processParamAnnotations(mutable: MutableParameter, paramAnnotations: Array[Annotation]): List[Parameter] = {
     var shouldIgnore = false
     for (pa <- paramAnnotations) {
       pa match {
@@ -392,9 +392,9 @@ class PlayApiReader(val routes: Option[Routes]) extends JaxrsApiReader {
         mutable.paramType = TYPE_BODY
         mutable.name = TYPE_BODY
       }
-      Some(mutable.asParameter)
+      List(mutable.asParameter)
     }
-    else None
+    else List.empty
   }
 
   def appendOperation(resourcePath: String, operation: Operation, operationsMap: Map[String, List[Operation]]): Map[String, List[Operation]] = {

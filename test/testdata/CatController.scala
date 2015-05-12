@@ -5,6 +5,7 @@ import com.wordnik.swagger.core.util.JsonSerializer
 
 import java.io.IOException
 
+import com.wordnik.swagger.model.Authorization
 import play.api.mvc.{Action, Controller}
 import play.Logger
 
@@ -17,7 +18,6 @@ class CatController extends Controller {
 
   @ApiOperation(value = "addCat1",
       httpMethod = "PUT",
-      authorizations = "",
       consumes = "",
       protocols = "")
     @ApiImplicitParams(Array(
@@ -64,9 +64,6 @@ class CatController extends Controller {
     def no_route = Action {
       request => Ok("test case")
     }
-
-
-
 }
 
 case class Cat(id: Long, name: String)
