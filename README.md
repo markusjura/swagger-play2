@@ -17,9 +17,9 @@ Usage
 You can depend on pre-built libraries in maven central by adding the following dependency:
 
 ```
-val appDependencies: Seq[sbt.ModuleID] = Seq(
-  "com.markusjura" %% "swagger-play2" % "1.3.7"
-)
+resolvers += Resolver.bintrayRepo("markusjura", "maven")
+
+libraryDependencies += "com.markusjura" %% "swagger-play2" % "1.3.7"
 ```
 
 ### Adding Swagger to your Play2 app
