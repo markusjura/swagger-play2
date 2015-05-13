@@ -1,5 +1,4 @@
 import sbtrelease.ReleasePlugin._
-import sbtrelease.ReleaseStateTransformations._
 
 organization := "com.markusjura"
 
@@ -8,8 +7,6 @@ name := "swagger-play2"
 scalaVersion := "2.11.6"
 
 crossScalaVersions := Seq("2.11.6", "2.10.4")
-
-checksums in update := Nil
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala).settings(
   releaseSettings
@@ -24,19 +21,29 @@ libraryDependencies ++= Seq(
   "org.mockito"                  %  "mockito-core"         % "1.9.5"   % "test"
 )
 
-homepage := Some(url("https://github.com/markusjura/swagger-play2"))
-
-licenses += ("Apache-2.0", url("https://www.apache.org/licenses/LICENSE-2.0.html"))
-
 // Release settings
-ReleaseKeys.versionBump := sbtrelease.Version.Bump.Minor
+ReleaseKeys.versionBump := sbtrelease.Version.Bump.Bugfix
+ReleaseKeys.publishArtifactsAction := PgpKeys.publishSigned.value
 
-// Bintray settings
-publishMavenStyle := true
-
-publishArtifact in Test := false
-
+// Publish settings
 bintrayRepository := "maven"
+publishMavenStyle := true
+publishArtifact in Test := false
+pomIncludeRepository := { _ => false }
+homepage := Some(url("https://github.com/markusjura/swagger-play2"))
+licenses += ("Apache-2.0", url("https://www.apache.org/licenses/LICENSE-2.0.html"))
+pomExtra := (
+  <scm>
+    <url>git@github.com:markusjura/swagger-play2.git</url>
+    <connection>scm:git:git@github.com:markusjura/swagger-play2.git</connection>
+  </scm>
+  <developers>
+    <developer>
+      <id>markusjura</id>
+      <name>Markus Jura</name>
+      <url>https://github.com/markusjura</url>
+    </developer>
+  </developers>)
 
 // Scala option settings
 scalacOptions ++= List(
